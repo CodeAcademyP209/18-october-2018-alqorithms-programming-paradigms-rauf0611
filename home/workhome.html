@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>homework</title>
+</head>
+<body>
+        <script>
+                function Book(_ad,_yazar,_sehifesayi,_capili){
+                    this.kitabAdi=_ad;
+                    this.kitabinYazari=_yazar;
+                    this.kitabinSehifeSayi=_sehifesayi;
+                    this.kitabinCapIli=_capili;
+        
+                }
+        
+                let kitablar=[
+                    new Book("One Indian Girl","Chetan Bhagat",359,2014),
+                    new Book("Mahatma Gandhi Autobiography: The Story Of My Experiments With Truth","Mahatma Gandhi",200,2009),
+                    new Book("HIGHER ALGEBRA","Knight",521,2004),
+                    new Book("Erqonomika və iş təhlükəsizliyi","Anonim",236,2016),
+                    new Book("Energetika - varlıqla yoxluğun astanasında","Cəfərov Tahir Dəmir oğlu",136,2015),
+                    new Book("Smart market. Elektroenergetika - islahatlar və intellektual bazar","Cəfərov Tahir Dəmir oğlu",96,2017),
+                    new Book("Keçid dövrü cəmiyyətinin sosial stratifikasiyasında orta sinif","Əzimova Rəfiqə",100,2014),
+                    new Book("Azərbaycan qadını ensiklopediyası","Azərbaycan Milli Ensiklopediyası NPB",404,2002),
+                    new Book("Siyasi sosiologiyanın müasir problemlərinə dair","Anonim",190,2014),
+
+                ]
+      
+                
+                for(let i=0;i<kitablar.length;i++){
+                    if(kitablar[i].kitabAdi>10){
+                        console.log("Kitabin adi: "+kitablar[i].kitabAdi+" Kitabin Sehife Sayi : "+kitablar[i].kitabinSehifeSayi)
+                    }
+                }
+        
+        </script>
+</body>
+</html>
